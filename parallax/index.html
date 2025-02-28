@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom's - ParallaxWebsite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/tom-onion/tom-onion/refs/heads/main/trans_favicon.ico" type="image/x-icon"/>
+    
+</head>
+
+<body>
+    <header>
+        <div id="logo">Tom Onion</div>
+
+        <div class="menu">
+            <a href="" class="active">Home</a>
+            <a href="">Blog</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+
+    <div class="parallax">
+        <h2 id="heading">Parallax Website</h2>
+        <img src="images/moon.png" alt="" id="moon">
+        <img src="images/layer.png" alt="" id="mountain">
+        <img src="images/grass.png" alt="" id="grass">
+    </div>
+
+    <section>
+        <h2>Parallax Scrolling Website</h2>
+
+        <p>
+            Life is a lovely tapestry that is filled with moments of laughter, joy, and love. Amidst the chaos of our everyday life, it's simple to forget the little pleasures surrounding us. Let's stop for a while, take a breath, and enjoy the beauty of the moment. Whether it is the feeling of the sun on our skin, the ring of laughter, or the flavor of our beloved food, these little joys tell us that happiness lies in small things. Cherish every moment with love and let the happiness overflow!
+        </p><br>
+
+        <p>
+            Dreams are the seeds of what we can become, and if we are brave enough to pursue them, we open a door to a universe of opportunity. All greatness begins with a dream, and the path to the fulfillment of that dream is filled with learning, expansion, and happiness. Let us approach our dreams with enthusiasm and persistence, aware that with each step forward, we draw closer to where we want to be. Keep in mind, the sky is not the limit; it's only the start of our amazing adventure.
+        </p><br>
+
+        <p>
+            In a world that can sometimes seem so disconnected, the wonder of human connection is at its best. Every encounter we have is a chance to exchange kindness, compassion, and love. Whether it's a warm chat with a friend or an act of kindness to a stranger, these encounters are a reminder that we are all in this together. Let's hold on to our connections, cultivate our relationships, and build a community where everyone feels seen and supported.
+        </p><br>
+
+        <p>
+            Positivity is a mighty force that has the power to change our lives and the lives of others around us. If we decide to concentrate on the positive, a ripple effect happens that brings smiles and inspiration to others. A smile, a good word, or an expression of thanks can make someone's day brighter and remind all of us of the goodness in the world. Let's develop an attitude of optimism, embracing the small wins and happiness that comes along the way, for it is during these instances that we live our best lives.
+        </p><br>
+
+        <p>
+            Change is a natural aspect of life, and though it can sometimes be frightening, it is also a force that brings us growth and transformation. Every new experience is a chance to learn, grow, and become a better person. When we accept change with open hearts and curious minds, we give ourselves permission to venture into the unknown and find new interests. It's worthwhile to bear in mind that with every step we make, however small, we move towards our journey. By perceiving change as an opportunity to develop rather than an ordeal to overcome, we can build resilience and hope. So let's greet the unknown with enthusiasm, recognizing that it's full of fantastic adventures and growth.
+        </p><br>
+        <p>
+            The moon, with its gentle, silvery light, possesses a mystical ability to light the nighttime sky and fill anyone who looks upon it with awe. As the moon grows and wanes, it reminds us of the cycles of life in a gentle and subtle way, urging us to accept change and see the beauty of each phase. Its peaceful being calls us to slow down, look within, and meet with our deepest thoughts and emotions. In the light of the moon, the world becomes different; the shadows play, and the air is charged with a sense of peace and potential. It's an evening for dreaming, for intention-setting, and for releasing what is no longer needed. The moon makes us look up, to value the size of the universe, and to realize that we are all part of something bigger. When we are bathing in its radiance, we are reminded that there is always light to help us navigate even during the darkest of moments. So let us pause for a moment to step outside, inhale the fresh night air, and let the calming energy of the moon fill our hearts with hope, inspiration, and renewed purpose.
+        </p>
+    </section>
+</body>
+<script>
+    const heading = document.getElementById("heading");
+    const moon = document.getElementById("moon");
+
+    window.addEventListener("scroll", () => {
+        let value = window.scrollY;
+
+        if (value <= 500) {
+            heading.style.marginTop = value * 2.5 + 'px';
+            moon.style.right = 20 + value * 0.1 + '%';
+        }
+    });
+</script>
+</html>
