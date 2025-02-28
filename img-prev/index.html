@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom's - ImagePreview</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/tom-onion/tom-onion/refs/heads/main/trans_favicon.ico" type="image/x-icon"/>
+</head>
+ 
+<body> 
+    <div class="container">
+        <label for="file" class="header">
+            <div class="upload-file">
+                <a href="">
+                <ion-icon id="upload-icon" name="cloud-upload-outline"></ion-icon>
+                </a>
+                <p id="upload-text">Browse File to upload!</p>
+            </div>
+        </label>
+        <label for="file" class="footer">
+            <p>Not selected file</p>
+        </label>
+        <input type="file" id="file" accept="Image/*"
+        onchange="showPreview(event);">
+    </div>
+
+    <script>
+        function showPreview(event){
+            const fileInput = event.target;
+            const file = fileInput.files[0];
+            const header = document.querySelector(".header");
+            const uploadIcon = document.getElementById("upload-icon");
+            const uploadText = document.getElementById("upload-text");
+            const footer = document.querySelector(".footer");
+
+            if(file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    header.style.backgroundImage = 
+                    `url(${e.target.result})`;
+                    header.style.border = 'none';
+                    uploadIcon.style.display = 'none';
+                    uploadText.style.display = 'none';
+                    footer.innerHTML = `<p>${file.name}</p>`
+                }
+                reader.readAsDataURL(file);
+            }
+
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
