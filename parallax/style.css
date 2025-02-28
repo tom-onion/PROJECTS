@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+    font-weight: 600;
+}
+
+.menu a {
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    padding: 6px 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.menu a:hover,
+a.active {
+    color: #333;
+    background: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#heading {
+    position: absolute;
+    top: 20%;
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 4px 5px #232121;
+}
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax img#moon {
+    width: 300px;
+    top: 40%;
+    right: 20%;
+}
+
+.parallax img#mountain {
+    position: fixed;
+    bottom: 0;
+}
+
+.parallax img#grass {
+    bottom: -40%;
+}
+
+section {
+    position: relative;
+    background-color: #020912;
+    padding: 30px 100px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    #heading {
+        font-size: 3em;
+    }
+
+    .parallax img#moon {
+        width: 180px;
+    }
+
+    .parallax img#mountain {
+        bottom: 20%;
+    }
+
+    .parallax img#grass {
+        bottom: -10%;
+    }
+
+    section {
+        margin-top: -60px;
+        padding: 30px 50px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 468px) {
+    header {
+        padding: 30px 50px;
+    }
+
+    #logo {
+        font-size: 1.5em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #heading {
+        font-size: 3em;
+    }
+
+    .parallax img#moon {
+        width: 180px;
+        top: 65%;
+        right: 10%;
+    }
+
+    .parallax img#mountain {
+        width: 130%;
+        bottom: 20%;
+    }
+
+    .parallax img#grass {
+        bottom: -5%;
+        width: 130%;
+    }
+
+    section {
+        margin-top: -60px;
+        padding: 30px 50px;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+}
