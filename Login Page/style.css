@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #121125;
+}
+
+.wrapper {
+    width: 380px;
+    background: #121125;
+    border-radius: 17px;
+    text-align: center;
+    padding: 20px 30px;
+    box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.wrapper h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.wrapper form {
+    margin: 20px 0;
+}
+
+form .field.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        margin-left: 0;
+    }
+
+    20%,
+    80% {
+        margin-left: -12px;
+    }
+
+    40%,
+    60% {
+        margin-left: 12px;
+    }
+}
+
+form .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .field .input-area {
+    position: relative;
+}
+
+form input {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #34495e;
+    border-bottom-width: 2px;
+    overflow: hidden;
+}
+
+form .input-form {
+    padding-left: 45px;
+    font-size: 15px;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+form .field i {
+    position: absolute;
+    top: 50%;
+    font-size: 16px;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+
+form .field .icon {
+    left: 15px;
+    color: #bfbfbf;
+}
+
+input:is(:focus) {
+    border: 2px solid transparent;
+    background: linear-gradient(#121125, #121125) padding-box,
+        linear-gradient(45deg, blue, red) border-box;
+    border-radius: 5px;
+    transition: all 0.1s ease;
+}
+
+form .field .error-icon {
+    right: 15px;
+    color: #dc3545;
+}
+
+form .field .error-txt {
+    color: #dc3545;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+form .field .error {
+    display: none;
+} 
+
+form .field.error .error {
+    display: block;
+}
+
+form .pass-link {
+    text-align: right;
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+.wrapper a {
+    color: #a4a6a8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+form input[type="submit"] {
+    border: 0;
+    outline: none;
+    margin-top: 30px;
+    background: linear-gradient(45deg, blue, red);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(65deg, blue, red);
+}
+
+.signup-link {
+    font-size: 12px;
+    font-weight: 300;
+    color: #bfbfbf;
+}
+
+.signup-link a {
+    color: rgb(166, 0, 255);
+}
