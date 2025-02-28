@@ -54,7 +54,7 @@ a.active {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('images/background.jpg') no-repeat;
+    background: url('https://raw.githubusercontent.com/tom-onion/tom-onion/refs/heads/main/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
