@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Signup Form | Html CSS JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="input_box">
+                <input type="text" id="fName" placeholder="First Name">
+            </div>
+            <div class="input_box">
+                <input type="text" id="lName" placeholder="Last Name">
+            </div>
+            <div class="input_box">
+                <input type="email" id="emailF" placeholder="Email Address">
+            </div>
+            <div class="input_box">
+                <input type="password" id="passF" placeholder="Password">
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', () => {
+            const FiName = document.getElementById('fName').value.trim();
+            const laName = document.getElementById('lName').value.trim();
+            const email = document.getElementById('emailF').value.trim();
+            const paField = document.getElementById('passF').value.trim();
+
+            if(FiName === '' || laName === '' || email === '' || paField === '') {
+                alert('Please enter below all fields');
+            } else {
+                localStorage.setItem('firstName', FiName);
+                localStorage.setItem('lastName', laName);
+
+                window.location.href = 'thanks.html'
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 id="greetings">Welcome to Tom Onion's Site! </h2>
+            <p>Your submission has been recieved. Thank You</p>
+        </div>
+    </div>
+
+    <script>
+        const firstName = localStorage.getItem('firstName');
+        const lastName = localStorage.getItem('lastName');
+
+        if (firstName && lastName) {
+            document.getElementById('greetings').innerHTML = `<b> Welcome to Tom nion's Site! </b> ${firstName} ${lastName}`;
+        }
+    </script>
+</body>
+</html>
