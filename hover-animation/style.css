@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: #000;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+    background-image: linear-gradient(#ff2f93, #ff2f93);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 500ms;
+}
+
+h2:hover {
+    background-size: 100% 100%;
+    background-position-x: left;
+}
