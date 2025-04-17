@@ -13,7 +13,7 @@
     <li><a href="https://tom-onion.github.io/projects/radio-btn">Radio Button(HTML, CSS)</a></li>
 </ol>
 
-<h2>Here are some list of all my projects:</h2>
+<h2>Here are some list of my crazy stuffs:</h2>
 
 <ol type="1">
     <li><a href="https://tom-onion.github.io/projects/games/ping-pong">Ping-Pong Game(HTML, CSS, JavaScript)</a></li>
