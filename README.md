@@ -1,4 +1,4 @@
-<h2 align="left">Hi 👋! My name is Dhayananth and I'm a Cybersecurity enthusiast, from India</h2>
+<h2 align="left">Hi 👋! I'm Dhayananth and I'm a Cybersecurity enthusiast, from India</h2>
 
 ###
 
