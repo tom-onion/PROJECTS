@@ -18,5 +18,5 @@
 <ol type="1">
     <li><a href="https://tom-onion.github.io/projects/games/ping-pong">Ping-Pong Game(HTML, CSS, JavaScript)</a></li>
     <li><a href="https://tom-onion.github.io/projects/games/car-game">Car Game(HTML, CSS, JavaScript)</a></li>
-    <li><a href="https://tom-onion.github.io/projects/tic-tac-toe">Tic Tac Toe game(HTML, CSS, JavaScript)</a></li>
+    <li><a href="https://tom-onion.github.io/projects/games/tic-tac-toe">Tic Tac Toe game(HTML, CSS, JavaScript)</a></li>
 </ol>
